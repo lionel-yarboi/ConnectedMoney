@@ -1,0 +1,42 @@
+node {
+
+     def deviceProperties = "-DappLocation='$APP_LOCATION' -DdeviceName='$DEVICE_NAME' -DplatformVersion='$PLATFORM_VERSION'"
+     def fileLocation = "$WORKSPACE/HSBCBeta/HSBCBetaAcceptanceTests"
+     def reportsLocation = "$WORKSPACE/HSBCBeta/HSBCBetaAcceptanceTests/src/test/java/reports"
+     def reRunFileLocation = "rerun:$WORKSPACE/HSBCBeta/HSBCBetaAcceptanceTests/target/rerun.txt"
+     def mongoEnvironment = "-Denv=${MONGO_ENVIRONMENT} -DmongoUrl=${MONGO_URL}  -DmongoDbName=${MONGO_DB_NAME} -DuserManager.authorizeUrl=${MONGO_USER_MANGER_URL} -Dspring.profiles.active=${SPRING_PROFILE}"
+
+     stage('Checkout project') {
+        checkout scm
+        currentBuild.displayName = "#${env.BUILD_NUMBER}, branch ${env.GIT_BRANCH}"
+     }
+
+     stage ("Permissions UI Tests"){
+        env.TAG_NAME = "permissions"
+        sh("cd ${fileLocation} && mvn test ${deviceProperties} ${mongoEnvironment} -Dcucumber.Options='-t @$TAG_NAME -p json:${reportsLocation}/cucumber_${TAG_NAME}_report.json'")
+        cucumber '${reportsLocation}/cucumber_${TAG_NAME}_report/*.json'
+     }
+
+     stage ("AccountList UI Tests"){
+        env.TAG_NAME = "accountList"
+        sh("cd ${fileLocation} && mvn test ${deviceProperties} -Dcucumber.Options='-t @$TAG_NAME -p json:${reportsLocation}/cucumber_${TAG_NAME}_report.json'")
+        cucumber '${reportsLocation}/cucumber_${TAG_NAME}_report/*.json'
+     }
+
+     stage ("AccountDetail UI Tests"){
+        env.TAG_NAME = "accountdetail"
+        sh("cd ${fileLocation} && mvn test ${deviceProperties} -Dcucumber.Options='-t @$TAG_NAME -p json:${reportsLocation}/cucumber_${TAG_NAME}_report.json'")
+        cucumber '${reportsLocation}/cucumber_${TAG_NAME}_report/*.json'
+     }
+
+     stage ("LogOut UI Tests"){
+        env.TAG_NAME = "logout"
+        sh("cd ${fileLocation} && mvn test ${deviceProperties} -Dcucumber.Options='-t @$TAG_NAME -p json:${reportsLocation}/cucumber_${TAG_NAME}_report.json'")
+        cucumber '${reportsLocation}/cucumber_${TAG_NAME}_report/*.json'
+     }
+
+     stage('Copy FastLane environment variables'){
+        sh("cp -r ~/Dependancies/environment_variables/. $WORKSPACE/HSBCBeta/Fastlane")
+        sh("cd HSBCbeta/fastlane && mv 'env.${ENVIRONMENT_PROFILE}' .env.${ENVIRONMENT_PROFILE}")
+     }
+ }

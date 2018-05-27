@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RunCucumberTests" time="0.985" tests="2" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @transactions"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.152-b16"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/lionelyarboi/hsbc_ios_beta/HSBCBeta/HSBCBetaAcceptanceTests"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/lionelyarboi/hsbc_ios_beta/HSBCBeta/HSBCBetaAcceptanceTests"/>
+    <property name="java.runtime.version" value="1.8.0_152-b16"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/7b/dtg0ng553m59g8gxn6_92rvm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.9/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/lionelyarboi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="user.home" value="/Users/lionelyarboi"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="lionelyarboi"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.9/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @transactions"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_152"/>
+    <property name="java.ext.dirs" value="/Users/lionelyarboi/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.9/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="Examples: " classname="Examples: " time="0.45">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [support.ExecutionConfiguration]; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in string value "classpath:application-${env}.properties"
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in string value "classpath:application-${env}.properties"
+</error>
+    <system-out><![CDATA[Feature: Display Transactions
+  
+  AS A: CM App user that has added my accounts
+  I WANT: To be able to view my recent transactions when viewing the account details
+  SO THAT: I can see how my money is spent
+
+  @transactions
+  Scenario Outline: Display transactions - current, savings and credit card &amp#27;[90m# features/Transactions.feature:11&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI login with valid credentials&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI tap include my bank button&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI tap "HSBC" bank&amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI login with valid credentials&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI am on polling screen&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mAccounts have successfully been added&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI am on you screen&amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI select an account of type <Account>&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select a month with some transactions&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe merchant name and amount per transaction should be displayed&amp#27;[0m
+
+    Examples: 
+]]></system-out>
+    <system-err><![CDATA[ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'log4j2.debug' to show Log4j2 internal initialization logging.
+]]></system-err>
+  </testcase>
+  <testcase name="Examples: " classname="Examples: " time="0.008">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [support.ExecutionConfiguration]; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in string value "classpath:application-${env}.properties"
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in string value "classpath:application-${env}.properties"
+</error>
+    <system-out><![CDATA[
+  @transactions
+  Scenario Outline: Pagination                                                     &amp#27;[90m# features/Transactions.feature:87&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI have previously accepted latest Terms and Conditions for user 'SAMEUSER'&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI am on login screen&amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI login with valid credentials&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI set my passcode&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI disable push notifications&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI am on you screen&amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI select first account of type SMB account&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI select a month with some transactions&amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI scroll to "<transaction>"&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see "<transaction>" with "<transaction_amount>"&amp#27;[0m
+
+    Examples: 
+]]></system-out>
+  </testcase>
+</testsuite>

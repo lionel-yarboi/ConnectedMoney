@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: RunCucumberTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.985 sec <<< FAILURE! - in RunCucumberTests
+Examples:   Time elapsed: 0.45 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [support.ExecutionConfiguration]; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in string value "classpath:application-${env}.properties"
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in string value "classpath:application-${env}.properties"
+
+Examples:   Time elapsed: 0.008 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [support.ExecutionConfiguration]; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in string value "classpath:application-${env}.properties"
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in string value "classpath:application-${env}.properties"
+
